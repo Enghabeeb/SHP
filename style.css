@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+ :root{
+--font-body: 'Open Sans', sans-serif;
+--font-heading: 'Raleway', sans-serif;
+--Dark-Blue-1: hsl(217, 28%, 15%);
+--Dark-Blue-2: hsl(218, 28%, 13%);
+--Dark-Blue-3: hsl(216, 53%, 9%);
+--Dark-Blue-4: hsl(219, 30%, 18%);
+--accen-color-cyan: hsl(176, 68%, 64%);
+--accent-color-blue: hsl(198, 60%, 50%);
+--neutral-color-white:hsl(0, 0%, 100%);
+} 
+
+body{
+    background-color: var(--Dark-Blue-4);
+    color: var(--neutral-color-white);
+    font-family: var(--font-body);
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: var(--font-heading);
+    line-height: 1.7;
+    font-weight: 700;
+}
+h1{
+    font-size: 1.7rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+p{
+    font-family: var(--font-body);
+}
+header{
+    background-color: var(--Dark-Blue-2);
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    justify-self: baseline;
+    align-self: baseline;
+    justify-content: space-between; 
+}
+ul{
+    list-style: none;
+    color: white;
+    margin: 0px;
+    display: flex;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    margin: 10px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar ul li{
+    display: inline-block;
+    margin-left: 16px;
+}
+main{
+   
+}
+section{
+    padding: 50px;
+    
+    
+}
+ /* .bg-curvy{
+    background-image: url(images/bg-curvy-mobile.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    inset: 240px 0 0 0;
+    width: 100%;
+    z-index: -1;
+}  */
+.intro-image{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro-text{
+    margin-top: 30px;
+}
+
+button{
+    border-radius: 50%;
+    background:linear-gradient(50deg, var(--accen-color-cyan), var(--neutral-color-white),);  
+    border: none;
+    color: var(--neutral-color-white);
+    font-weight: 700;
+    padding: 0 12px;
+    height: 48px;
+    font-family: var(--font-heading);
+}
+.start:input{
+    height: 2.5rem;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--neutral-color-white);
+}
+.start:hover{
+    cursor: pointer;
+    background: linear-gradient(50deg, var(--accent-color-blue), var(--accen-color-cyan));
+}
+.feature{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.f-body{
+    width: 35%;
+    padding: 32px 40px;
+    text-align: center;
+}
+.produtivity{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.productivity-text{
+    padding-left: 4rem;
+}
+.productivity-link{
+
+    font-family: var(--font-body);
+    border-bottom: 5% solid var(--accen-color-cyan);
+    color: var(--neutral-color-white);
+}
+/* .testimony{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.testimony-box{
+    margin-left: 56px;
+    flex-basis: 35%;
+    border-radius: 5px;
+    background-color: var(--Dark-Blue-4);
+}
+.testimony-box:first-child{
+    margin-left: 0;
+}
+.testimony-text{
+    display: flex;
+    padding: 16px;
+}
+.t-image{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px; */
+
+}
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimony-text{
+    margin-left: 3.5rem;
+    flex-basis: 35%;
+    border-radius: 5px;
+    background-color: var(--Dark-Blue-4);
+    box-shadow: 2px 2px 2px 2px var(--Dark-Blue-3);
+    padding: 20px
+}
+.testimony-box{
+   display: flex;
+   justify-content: space-between;
+    /* padding-top: 1rem; */
+}
+/* .testimoial-status .t-image{
+    display: flex; 
+} */
+.t-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.action{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-content{
+    position: absolute;
+    top: 10px;
+    max-width: 800px;
+    width: 67%;
+    min-width: 300px;
+    padding: 20px;
+    box-shadow: 2px 2px 30px 2px var(--Dark-Blue-3);
+    background-color: var(--Dark-Blue-4);
+    border-radius: 5px;
+    text-align: center;
+}
+.actioner-details{
+    display: flex;
+    justify-content: center;
+}
+.input-details{
+    width: 80%;
+    max-width: 600px;
+}
+.button-details{
+    width: 20%;
+    max-width: 250px;
+    margin-left: 1rem;
+}
+footer{
+    display: grid;
+    background-color: var(--Dark-Blue-3);
+}
+
+.info{
+    margin: 2rem;
+    padding: 2rem;
+    
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4 auto);
+    grid-template-areas: "logo" "location" "contact" "email" "attribution";
+}
+
+footer p{
+    padding: 0;
+    
+}
+
+.img-info{
+    margin-right: 1rem;
+    width: 17px;
+    height: 17px;
+    line-height: 1.5;
+} 
+.info-contact{
+    grid-area: contact;
+    display: flex;
+     flex-direction: column; 
+    align-items: baseline  
+
+}
+.info-mail{
+    margin-right: 2.5rem;
+}
+ div{
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline; 
+}
+.info-input{
+grid-area: links;
+display: flex;
+justify-content: center;
+
+}
+.info-input-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.sm-links{
+    display: flex;
+    justify-content: flex-end;
+    grid-area: social;
+
+}
+.info-location{
+    display: flex;
+    width: auto;
+}
+.info-contact{display: flex;}
+.info-mail{
+    display: flex;
+}
+.info-input-list{
+    display: block;
+}
+.iil{
+    display: block; 
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:375px){
+    section (padding: 2.5rem 2rem;)
+    .action{
+        min-width: 50%;
+        min-height: 70%;
+        }
+        .info-contact{
+            (padding: 25rem 3rem 1rem;)
+        }
+}
+@media(min-width: 1100px){
+    section (padding: 3.5rem 3rem;)
+    .action{
+        min-width: 60%;
+        min-height: 80%;
+    }
+    .info-contact{
+        padding: 20rem 3rem 1rem;
+    }
+}
